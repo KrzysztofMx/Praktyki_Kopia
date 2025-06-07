@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Inter";
+}
+
+nav,
+.tree,
+body {
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1f22;
+}
+header {
+  position: relative;
+  height: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 1px 4px rgb(0, 0, 0);
+  z-index: 99;
+  background: #1e1f22;
+}
+.header-logo {
+  width: 40%;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo .a {
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+}
+.logo .b {
+  width: 65%;
+}
+.logo .c {
+  width: 80%;
+}
+.user {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+.user a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  width: 40%;
+  height: 60%;
+}
+.user a:first-child:hover {
+  background-color: #28292d;
+}
+.user a p {
+  width: 100%;
+}
+.search {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  background-color: rgb(19, 20, 22);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.search input {
+  width: 90%;
+  border: none;
+  background-color: rgb(19, 20, 22);
+  font-size: 1.2rem;
+  padding: 0.3rem 0rem;
+  font-weight: 100;
+}
+.search input:focus-visible {
+  border: none;
+  outline: none;
+  background-color: rgb(19, 20, 22);
+}
+.search img {
+  width: 20px;
+  height: 20px;
+}
+nav {
+  position: absolute;
+  padding-top: 5rem;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+  z-index: 1;
+
+  /* background-color: #1c253d; */
+  background: #1e1f22;
+  box-shadow: 1px 0px 4px rgb(0, 0, 0);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  text-align: center;
+  border-bottom: 1px solid #383a3f;
+}
+.btn_project {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  background: #1e1f22;
+  border: none;
+
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn_project:hover {
+  background-color: #28292d !important;
+}
+.tree {
+  display: block;
+  position: absolute;
+  padding-top: 5rem;
+  padding-left: 10rem;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+
+  background-color: #1e1f22;
+  box-shadow: 1px 0px 4px rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.tree ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tree ul li {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #383a3f;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+.tree ul li:hover {
+  background-color: #28292d !important;
+  cursor: pointer;
+}
+.content {
+  height: calc(100% - 5rem);
+  margin-left: 10rem;
+  transition: all 0.5s;
+  position: relative;
+}
+.ProseMirror {
+  height: 100%;
+}
+/* LOGOWANIE */
+.body-log h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 190px;
+}
+.body-log form {
+  width: 420px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.body-log label {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.body-log a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 4rem;
+  color: white;
+  padding: 0.6rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #36383d;
+  background: linear-gradient(to right, #121212, #121212 50%, #28292d 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.body-log a img {
+  margin-left: 0.4rem;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+.body-log a:hover {
+  background-position: 0 100%;
+}
+.body-log p {
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.body-log input {
+  width: 100%;
+  height: 40px;
+  border-radius: 2px;
+  color: white;
+  padding: 1.5rem 0rem;
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+  background: #28292d;
+  border: none;
+  outline: none;
+}
+
+.body-log button {
+  width: 100%;
+  background: #9139d3;
+  padding: 0.8rem 0rem;
+  margin-top: 40px;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.body-log button:hover {
+  background: #8100e6;
+}
+
+::-webkit-scrollbar {
+  background-color: #36383d;
+  border-radius: 3rem;
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 3rem;
+}
